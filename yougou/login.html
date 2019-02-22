@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优购时尚商城</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="shortcut icon" href="font/bitbug_favicon.ico" />
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+<!--header开始-->
+    <div class="header">
+        <ul class="headerFirstUl">
+            <li class="header_li">
+                <a href="#">关注</a>
+                <div class="app">
+                    <div class="appFir">
+                        <img src="img/weChat.jpg" alt="">
+                        <span>关注公众号</span>
+                    </div>
+                </div>
+            </li>
+            <li class="loadApp">
+                <a href="#">下载APP</a>
+                <div class="app">
+                    <div class="appFir appSec">
+                        <img src="img/APP.jpg" alt="">
+                        <span>优购APP</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="header_right">
+            <li id="headerFirLi"><a href="login.html">登录 </a>/<a href="register.html"> 注册</a></li>
+            <li><a href="#"><i class="iconfont icon-heart"></i> 收藏</a></li>
+            <li><a href="shopping.html"><i class="iconfont icon-gouwudai"></i> 购物袋</a></li>
+            <li>
+                <a href="#">公告</a>
+                <div class="notice">
+                    <ul>
+                        <li style="color:#e60012">优购客服电话变更</li>
+                        <li>关闭分享购频道</li>
+                        <li>提醒会员谨防诈骗电话</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+<!--logo-->
+<div class="logo">
+    <img src="img/signin-register-logo.png" alt=""><span>用户登录</span>
+</div>
+<div class="mian">
+    <img src="img/ba839750211e4c6485fe16dea496b709.jpg" alt="">
+    <div id="loginFir" class="login">
+        <div class="loginFir">
+            <p>账号密码登录</p>
+            <p>手机号快捷登录</p>
+        </div>
+        <div class="mianDiv">
+            <div class="accountNum">
+                <div class="inputDiv check">
+                    <span class="iconSpan"><i class="iconfont icon-denglu"></i></span>
+                    <input type="text" id="username" placeholder="手机号/会员号/邮箱" class="username">
+                    <span class="userSpan" id="userSpan"></span>
+                </div>
+                <div class="inputDiv check">
+                    <span class="iconSpan"><i class="iconfont icon-mima"></i></span>
+                    <input type="text" id="userpass" placeholder="请输入密码" class="userpass">
+                    <span class="userSpan" id="passSpan"></span>
+                </div>
+                <p class="forgotPass"><a href="#">忘记密码？</a></p>
+            </div>
+            <div class="phone">
+                <div class="inputDiv userLogin">
+                    <label>手机号</label><input type="text" id="phoneNum" placeholder="请输入您的手机号码">
+                    <span class="userPhone reg" id="userPhone"></span>
+                </div>
+                <div class="authDiv inputDiv">
+                    <div class="auth userLogin">
+                        <label>短信验证码</label><input id="SmsCode" type="text">
+                        <span class="SMS reg" id="SMS">bxfx</span>
+                    </div>
+                    <div class="authImg gainCode">获取验证码</div>
+                </div>
+            </div>
+            <div class="logIn" id="logIn">点击登录</div>
+            <h3>使用合作网站登录优购</h3>
+            <div class="acountLog">
+                <span><i class="iconfont icon-weixin"></i></span>
+                <span><i class="iconfont icon-zhifubao"></i></span>
+                <span><i class="iconfont icon-qq"></i></span>
+                <span><i class="iconfont icon-xinlang"></i></span>
+                <span><i class="iconfont icon-iconfont16x16moban"></i></span>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="bottom">
+    <ul>
+        <li>Copyright © 2011-2014 Yougou Technology Co., Ltd.</li>
+        <li><a href="#">粤ICP备09070608号-4</a></li>
+        <li> 增值电信业务经营许可证：<a href="#">粤 B2-20090203</a></li>
+    </ul>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/test.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script>
+    $("#logIn").click(function(){
+        if($("#username").val()=="" || $("#userpass").val()==""){
+            alert("内容不能为空");
+            return;
+        }
+        let xhr=new XMLHttpRequest();
+        xhr.open("post","login.php",true);
+        xhr.onreadystatechange=function(){
+            if(xhr.readyState==4 && xhr.status==200){
+                console.log("结果"+xhr.responseText)
+                console.log(xhr.responseText)
+                if(xhr.responseText==1){
+                    alert("登录成功")
+                    setTimeout(function(){
+                        window.location.href="index.html";
+                        saveCookie("user",$("#username").val(),1);
+                    },1000)
+                }else{
+                    alert("输入不正确");
+                }
+            }
+        }
+        xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+        let val="username="+$("#username").val()+"&userpass="+$("#userpass").val();
+
+        xhr.send(val);
+    })
+</script>

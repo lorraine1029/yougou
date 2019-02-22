@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优购时尚商城</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="shortcut icon" href="font/bitbug_favicon.ico" />
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+<!--header开始-->
+    <div class="header">
+        <ul class="headerFirstUl">
+            <li class="header_li">
+                <a href="#">关注</a>
+                <div class="app">
+                    <div class="appFir">
+                        <img src="img/weChat.jpg" alt="">
+                        <span>关注公众号</span>
+                    </div>
+                </div>
+            </li>
+            <li class="loadApp">
+                <a href="#">下载APP</a>
+                <div class="app">
+                    <div class="appFir appSec">
+                        <img src="img/APP.jpg" alt="">
+                        <span>优购APP</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="header_right">
+            <li><a href="login.html">登录 </a>/<a href="register.html"> 注册</a></li>
+            <li><a href="#"><i class="iconfont icon-heart"></i> 收藏</a></li>
+            <li><a href="shopping.html"><i class="iconfont icon-gouwudai"></i> 购物袋</a></li>
+            <li>
+                <a href="#">公告</a>
+                <div class="notice">
+                    <ul>
+                        <li style="color:#e60012">优购客服电话变更</li>
+                        <li>关闭分享购频道</li>
+                        <li>提醒会员谨防诈骗电话</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+<!--logo-->
+<div class="logo">
+    <img src="img/signin-register-logo.png" alt=""><span>用户注册</span>
+</div>
+<!--main-->
+<div class="mian">
+    <img src="img/ba839750211e4c6485fe16dea496b709.jpg" alt="">
+    <div class="login">
+        <div class="loginFir">
+            <p>登录</p>
+            <p>注册</p>
+        </div>
+        <div class="mianDiv">
+            <div>
+                <div class="regWay">
+                    <select name="user" id="secUser">
+                        <option value="手机号">手机号</option>
+                        <option value="邮箱">邮箱</option>
+                    </select><input id="inport" type="text" class="temp" placeholder="请输入您的手机号码"><span id="sym"></span>
+                    <span class="tips" id="phoneTips"></span>
+                </div>
+                <div class="authDiv">
+                    <div class="authCode">
+                        <label>验证码</label><input type="text" class="temp" class="temp" id="Code">
+                    </div>
+                    <div class="authImg" id="random">1</div>
+                    <span class="tips" id="codeTips"></span>
+                </div>
+                <div class="authDiv">
+                    <div class="authCode authSec">
+                        <label>短信验证码</label><input type="text" class="temp" id="inforCode">
+                    </div>
+                    <div class="authImg gainCode" id="gainCode">获取验证码</div>
+                    <span class="tips" id="inforTips"></span>
+                </div>
+                <div class="authDiv authCode pass">
+                    <label>密码</label><input type="password" class="regPass temp" id="regPass" placeholder="字母、数字、符号均可，6-25个字符以内"><span id="passReg"></span>
+                    <span class="tips" id="passTips"></span>
+                </div>
+                <div class="authCode pass">
+                    <label>确认密码</label><input class="regPass" id="conPass" class="temp" type="password">
+                    <span class="tips" id="conformPass"></span>
+                </div>
+            </div>
+            <p class="PD">
+                <input type="checkbox" checked id="checkBox" name="radio"><label for="radio">我已阅读并同意<a href="#">《优购会员注册协议》</a></label><span id="read"></span>
+            </p>
+            <div class="logIn" id="logIn">确认并注册</div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <ul>
+        <li>Copyright © 2011-2014 Yougou Technology Co., Ltd.</li>
+        <li><a href="#">粤ICP备09070608号-4</a></li>
+        <li> 增值电信业务经营许可证：<a href="#">粤 B2-20090203</a></li>
+    </ul>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/sliderjQuery.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/register.js"></script>

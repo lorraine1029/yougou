@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>优购时尚商城</title>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="shortcut icon" href="font/bitbug_favicon.ico" />
+    <link rel="stylesheet" href="css/shopping.css">
+</head>
+
+<body>
+<!--header开始-->
+    <div class="header">
+        <ul class="headerFirstUl">
+            <li class="header_li">
+                <a href="#">关注</a>
+                <div class="app">
+                    <div class="appFir">
+                        <img src="img/weChat.jpg" alt="">
+                        <span>关注公众号</span>
+                    </div>
+                </div>
+            </li>
+            <li class="loadApp">
+                <a href="#">下载APP</a>
+                <div class="app">
+                    <div class="appFir appSec">
+                        <img src="img/APP.jpg" alt="">
+                        <span>优购APP</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="header_right">
+            <li id="headerFirLi" style="color:white;"></li>
+            <li><a href="#"><i class="iconfont icon-heart"></i> 收藏</a></li>
+            <li><a href="shopping.html"><i class="iconfont icon-gouwudai"></i> 购物袋</a></li>
+            <li>
+                <a href="#">公告</a>
+                <div class="notice">
+                    <ul>
+                        <li style="color:#e60012">优购客服电话变更</li>
+                        <li>关闭分享购频道</li>
+                        <li>提醒会员谨防诈骗电话</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+<!--logo-->
+<div class="logo">
+    <img src="img/signin-register-logo.png" alt=""><img class="life" src="img/bg.png" alt="">
+    <div class="progressBar">
+        <ul>
+            <li>我的购物袋 <i></i><em></em></li>
+            <li>提交订单中心 <i></i><em></em></li>
+            <li>成功提交订单 </li>
+        </ul>
+    </div>
+</div>
+<div class="subject">
+    <div class="car">
+        <div class="goods"></div>
+        <div class="goodsInformation">
+            <div class="goodsCar">
+                <img src="img/car.png" alt="">
+            </div>
+            <p class="infoExp">您的购物袋中暂无商品，赶快选择心爱的商品吧</p>
+            <div class="back">返回首页</div>
+            <div class="view">
+                <p>您可以查看：</p>
+                <p><a href="#">我的收藏夹 </a><a href="#"> 我已购买的商品</a></p>
+            </div>
+
+        </div>
+    </div>
+    <div class="shoppingCar">
+        <table>
+            <tr>
+                <td><input id="chkAll" type="checkbox">全选</td>
+                <td class="goodsName">商品名称</td>
+                <td>颜色尺码</td>
+                <td>单价</td>
+                <td>数量</td>
+                <td>小计</td>
+                <td>操作</td>
+            </tr>
+
+            <tr clas="trTh" id="trTh">
+                <td>
+                    <input type="checkbox" name="name"><label for="name">全选</label>
+                </td>
+                <td> <span class="fav">移入收藏夹</span></td>
+                <td><span class="del">删除</span></td>
+                <td colspan="4"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div class="shoppingBtn">
+                        <div class="goOn">继续购物</div>
+                        <div class="clear">清空购物车</div>
+                    </div>
+                </td>
+                <td colspan="3">
+                    <div class="totalPrice">
+                        <p>总计(不含运费) : ￥</p><span class="money">0</span>
+                    </div>
+                </td>
+                <td>
+                    <div class="settle">去结算</div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="theyPromise">
+        <dl>
+            <dt>购物保障 :</dt>
+            <dd><i class="iconfont icon-zhengpinbaozheng"></i>100%正品</dd>
+            <dd><i class="iconfont icon-iconwuyoutuihuanhuo"></i>10天退换货</dd>
+            <dd><i class="iconfont icon-buchajia"></i>10天补差价</dd>
+        </dl>
+        <p>优惠券/礼品卡在下一步使用</p>
+        <p><a href="index.html">帮助我们改进购物流程</a></p>
+        <h3>购买了您购物袋中商品的顾客还购买了</h3>
+    </div>
+    <div class="recommend">
+        <div class="page">
+            <p>第 <span>0</span>页</p> ,
+            <p>共 <span>0</span>页</p>
+        </div>
+        <img src="img/jiantouLeft.png" class="arrow arrowLeft" alt="">
+        <img src="img/jiantouRight.png" class="arrow arrowRight" alt="">
+    </div>
+    <div class="line"></div>
+</div>
+<div class="bottom">
+    <ul>
+        <li>Copyright © 2011-2014 Yougou Technology Co., Ltd.</li>
+        <li><a href="#">粤ICP备09070608号-4</a></li>
+        <li> 增值电信业务经营许可证：<a href="#">粤 B2-20090203</a></li>
+    </ul>
+</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="js/sliderjQuery.js"></script>
+<script type="text/javascript" src="js/public.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/shopping.js"></script>
+<script type="text/javascript" src="js/cookieTools.js"></script>
+<script type="text/javascript" src="js/checkall.js"></script>
+<script>
+    $("#headerFirLi").html(getCookie("username"))
+</script>

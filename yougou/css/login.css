@@ -1,0 +1,220 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,figure,dl,dd,td,input,fieldset,div,table,tr,td,span{
+    margin:0;
+    padding:0;
+}
+ul li{
+    list-style:none;
+}
+img{
+    border:none;
+}
+a{
+    text-decoration:none;
+}
+
+/*logo部分*/
+.logo{
+    width:100%;
+    height:70px;
+    display:flex;
+    align-items:center;
+}
+.logo img:nth-child(1){
+    display:inline-block;
+    width:158px;
+    height:40px;
+    margin-left:170px;
+}
+.logo span{
+    color:#666666;
+    border-left:1px solid #e6e6e6;
+    height:42px;
+    margin-left:30px;
+    line-height:42px;
+    padding-left:30px;
+}
+.mian{
+    width:100%;
+    height:550px;
+    position:relative;
+}
+.mian img{
+    width:100%;
+    height:100%;
+}
+
+.login{
+    width:380px;
+    height:450px;
+    position:absolute;
+    top:30px;
+    right:140px;
+    padding-top:35px;
+    background:white;
+}
+#loginSec{
+    display:none;
+}
+.loginFir{
+    width:350px;
+    height:40px;
+    margin:0 auto;
+    display:flex;
+    justify-content:spacing-between;
+}
+.iconSpan{
+    width:27px;
+    padding:0 44px 0 13px;
+    display:inline-block;
+    font-size:
+}
+.loginFir p{
+    width:50%;
+    height:40px;
+    text-align:center;
+    font-size:12px;
+    line-height:40px;
+}
+.loginFir p:nth-child(1){
+    background:#333333;
+    color:white;
+}
+.loginFir p:nth-child(2){
+    background:#f3f3f3;
+    color:#333333;
+}
+.iconfont{
+    color:#9e9e9e;
+    font-size:20px;
+}
+.inputDiv{
+    line-height:38px;
+    width:310px;
+    height:38px;
+    border:1px solid #e3e2e2;
+    margin:30px 0;
+}
+.inputDiv input{
+    outline:none;
+    border:none;
+}
+.forgotPass{
+    float:right;
+    padding-top:4px;
+    border-bottom:1px solid #666666;
+    margin-bottom:7px;
+}
+.forgotPass a{
+    font-size:12px;
+    color:#666666;
+}
+.mianDiv{
+    width:315px;
+    margin:0 auto;
+}
+.logIn{
+    width:313px;
+    height:40px;
+    background:#000;
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+    clear:both;
+    line-height:40px;
+    margin-bottom:15px;
+}
+.mianDiv h3{
+    font-size:12px;
+    color:#999999;
+    text-align:center;
+}
+.acountLog{
+    margin-top:20px;
+}
+.acountLog span{
+    width:58px;
+    display:inline-block;
+    text-align:center;
+    border-right:1px solid #e5e1e5;
+}
+.acountLog span:nth-child(5){
+    border-right:none;
+}
+.acountLog .iconfont{
+    font-size:32px;
+}
+.acountLog span:nth-child(1) .iconfont{
+    color:#11cd6e;
+}
+.acountLog span:nth-child(2) .iconfont{
+    color:#36baef;
+}
+.acountLog span:nth-child(3) .iconfont{
+    color:#e36161;
+}
+.acountLog span:nth-child(4) .iconfont{
+    color:#f0b96e;
+}
+.acountLog span:nth-child(5) .iconfont{
+    color:#4a85c9;
+}
+
+/*手机号登陆*/
+.inputDiv label{
+    width:65px;
+    display:inline-block;
+    color:#000;
+    font-size:12px;
+    text-align:left;
+    margin-left:5px;
+}
+.gainCode{
+    width:72px;
+    height:36px;
+    line-height:36px;
+    font-size:12px;
+    color:white;
+    text-align:center;
+    background:#323232;
+    display:inline-block;
+}
+.auth{
+    width:230px;
+    height:36px;
+    border:1px solid #e3e2e2;
+    display:inline-block;
+    margin-right:3px;
+}
+.authDiv{
+    border:none;
+}
+.inputDiv input{
+    width:120px;
+}
+.authDiv{
+    display:flex;
+}
+.phone{
+    display:none;
+}
+
+.check{
+    position:relative;
+}
+.userSpan{
+    position:absolute;
+    left:0;
+    top:36px;
+}
+.userLogin{
+    position:relative;
+}
+.reg{
+    position:absolute;
+    left:0;
+    top:36px;
+}
+.userSpan,.reg{
+    font-size:10px;
+    color:#333;
+}

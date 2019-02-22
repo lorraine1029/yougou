@@ -1,0 +1,202 @@
+
+.mainBox{
+    width:100%;
+}
+.mainBoxLeft{
+    width:650px;
+    height:580px;
+    float:left;
+}
+.mainBoxRight{
+    width:570px;
+    float:left;
+}
+.smallImg{
+    width:70px;
+    height:480px;
+    border:1px solid black;
+    display:inline-block;
+}
+.smallImg li{
+    width:70px;
+    height:58px;
+    border:1px solid red;
+}
+.glass{
+    position:relative;
+    width:480px;
+    height:480px;
+    display:inline-block;
+    background:url(../goods/101156234_01_mb.jpg) no-repeat;
+    background-size:100%;
+}
+.show{
+    display:none;
+    position:absolute;
+    top:0px;
+    left:490px;
+    width:480px;
+    height:480px;
+    background:url(../goods/101156234_01_mb.jpg) no-repeat;
+    backround-position:center;
+    background-size:150%;
+}
+.mask{
+    display:none;
+    width:225px;
+    height:225px;
+    background:#cccccc;
+    opacity:.2;
+    position:absolute;
+    top:0px;
+    left:0px;
+}
+.brand{
+    width:145px;
+    height:75px;
+}
+.goodsState{
+    margin:30px 0 50px;
+    font-size:12px;
+    color:#333037;
+}
+.price{
+    font-size:12px;
+    color:#353132;
+}
+.price span:nth-child(1){
+    font-size:16px;
+}
+.price span:nth-child(1),.price span:nth-child(3){
+    font-weight:bolder;
+}
+.price span:nth-child(3){
+    margin-left:10px;
+}
+.seckill{
+    font-size:12px;
+    color:#353132;
+    margin:35px 0 42px;
+}
+.seckill p{
+    display:inline-block;
+}
+.seckill p:nth-child(1){
+    width:55px;
+    height:16px;
+    text-align:center;
+    line-height:16px;
+    background:#373330;
+    color:white;
+}
+.seckill p:nth-child(2){
+    margin:0 12px;
+}
+.secPart{
+    padding-top:20px;
+    border-top:1px dotted #a9a9a9;
+}
+.goodsSize{
+    margin:40px 0 26px;
+}
+.goodsSize span{
+    vertical-align:245%;
+}
+.goodsSize ul{
+    display:inline-block;
+    width:295px;
+}
+.goodsSize li{
+    width:50px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    border:1px solid #cfcfcf;
+    font-size:12px;
+    color:#cfcfcf;
+    float:left;
+    margin:0 12px 12px 0;
+}
+#addNum{
+    width:84px;
+    height:25px;
+}
+.btnCar{
+    margin:33px 0 42px;
+}
+.btnCar div{
+    font-size:18px;
+    border:1px solid #333333;
+    line-height:50px;
+    width:225px;
+    height:50px;
+    text-align:center;
+    display:inline-block;
+}
+.addToCar{
+    background:#333;
+    margin-right:24px;
+    color:white;
+}
+.mainBoxBottom .iconfont{
+    font-size:12px;
+    color:#989697;
+}
+.mainBoxBottom span{
+    font-size:12px;
+    color:#989697;
+}
+.QRcode{
+    text-align:center;
+    float:right;
+}
+.QRcode span{
+    display:block;
+}
+
+.information h3,.sizeInformation h3{
+    font-size:32px;
+    color:#333230;
+
+    text-align:center;
+}
+.information h3{
+    margin-bottom:48px;
+}
+.information ul{
+    overflow:hidden;
+}
+.information ul li{
+    width:240px;
+    height:80px;
+    line-height:80px;
+    float:left;
+    border-bottom:1px solid #eeeeee;
+}
+.information li p{
+    display:inline-block;
+    clear:both;
+}
+.sizeInformation li,h3{
+    clear:both;
+}
+.sizeInformation{
+    margin-top:130px;
+}
+.sizeInformation h3{
+    margin-bottom:55px;
+}
+.sizeInformation p{
+    display:inline-block;
+    width:160px;
+    line-height:80px;
+}
+.sizeInformation span{
+    display:inline-block;
+    width:170px;
+    height:80px;
+    line-height:80px;
+}
+.sizeInformation li{
+    border-bottom:1px solid #eeeeee;
+}
